@@ -29,6 +29,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "ppc_disasm.h"
 
 #define VERSION 1
@@ -37,7 +38,7 @@
 const char *_ver = "$VER: vdappc 1.3 (07.03.2001)\r\n";
 
 
-main(int argc,char *argv[])
+int main(int argc,char *argv[])
 {
   FILE *fh = NULL;
   ppc_word buf[1];
